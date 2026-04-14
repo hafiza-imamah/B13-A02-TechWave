@@ -80,11 +80,13 @@
 #banner{
     background-image: url(./assets/hero-bg.png);
      background-image: no-repeat;
+     background-size:cover ;
+     background-position: center;
      width: 100%;
      padding: 101px 0;
      
 }
-.banner-contant{
+.banner-content{
     margin: 0 auto;
     padding: 0;
       display: flex;
@@ -97,7 +99,7 @@
             position:relative;
             /* border: 1px solid black; */
             width: 350px;
-            right: 2.5%;
+            /* right: 2.5%; */
             display: block;
         }
          
@@ -139,8 +141,9 @@
 } */
 .banner-brand{
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 40px;
+    margin-bottom: 8px;
     align-items: center;
 }
 .btn-container{
@@ -182,9 +185,17 @@
         height: 24px;
         width: 24px;
     }
-    #banner{
-        max-width: 576px;
-        width: 100%;
+    #banner{ 
+        background-size:100% 100% ; 
+        padding: 40px 20px;
+    }
+    .banner-brand{
+        font-size: 40px;
+        margin-top: 24px;
+    }
+    .txt{
+        align-items: center;
+        text-align: center;
     }
 
 }
