@@ -1,0 +1,190 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:  400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared styles */
+.btn,.btn-1{
+     
+    border: none;
+    padding: 12px 16px;
+    border-radius: 10000px;
+    font-size:16px ;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 10px; 
+    background: linear-gradient(20deg , #F7E93F 0%,#FB09B4 41%, #9100F8 100%);
+    align-items: center;
+}
+/* .btn:hover {
+    background-color:#469165 ;
+} */
+
+.brand,.nav-link,h1,p {
+    color: white;
+}
+.nav-link{
+    color: rgba(255, 255, 255, 0.918);
+}
+.txt{
+    color: rgba(255, 255, 255, 0.671);
+}
+/* Header styles */
+.navbar{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0px;
+
+}
+.brand,.gradient{
+    font-size: 48px;
+    font-weight: 700;
+}
+ 
+.gradient{ 
+    background: linear-gradient(to top , #F7E93F 0%,#FB09B4 41%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip:text ;
+    color: transparent;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+}
+
+ 
+.nav-link{
+    text-decoration: none;
+}
+.hamburger-icon{
+    display: none;
+}
+
+#banner{
+    background-image: url(./assets/hero-bg.png);
+     background-image: no-repeat;
+     width: 100%;
+     padding: 101px 0;
+     
+}
+.banner-contant{
+    margin: 0 auto;
+    padding: 0;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+  .podcast-container{
+            position:relative;
+            /* border: 1px solid black; */
+            width: 350px;
+            right: 2.5%;
+            display: block;
+        }
+         
+        .microphone{  
+            width: 120px;
+            position: absolute;
+            /* z-index: 1; */
+            transform: translate(-50%, -50%);
+            
+            top: 50%;
+            left:50%;
+           
+             
+        }
+        .badge{ 
+            position: absolute;
+            
+            font-size: 18px;
+            font-weight: 600;
+            color: #1A0B2E;
+            background-color: #00FF88;
+            padding:8px 16px ;
+            border-radius: 10000px;
+            box-shadow: 0 3px 27px 0 #00ff8875;
+            width: 75px;  
+            bottom: 85%;
+            right: 5%;
+             
+        }
+ 
+/* .badge{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A0B2E;
+    background-color: #00FF88;
+    padding:8px 16px ;
+    border-radius: 10000px;
+    width: 75px;
+} */
+.banner-brand{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 40px;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    margin-top: 24px;
+}
+ 
+.btn-2{
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    height: 44px;
+    padding: 0px 20px;
+    gap: 8px;
+    border-radius: 10000px; 
+    font-size:16px ;
+    font-weight: 600; 
+    cursor: pointer;
+    display: flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 8px;
+}
+
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .menu,.btn{
+        display: none;
+    }
+    
+    .navbar{
+         padding:16px 20px ; 
+         display: flex;
+         justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger-icon{
+        display: block; 
+        height: 24px;
+        width: 24px;
+    }
+    #banner{
+        max-width: 576px;
+        width: 100%;
+    }
+
+}
