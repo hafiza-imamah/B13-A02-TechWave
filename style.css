@@ -440,6 +440,20 @@
         background-size:100% 100% ; 
         padding: 40px 20px;
     }
+    .podcast-container{
+        width: 200px;
+        
+    }
+    .hero-circle{
+         display: flex;
+         flex-direction: column;
+         
+    }
+    .microphone{
+        width: 80px;
+        display: flex;
+         flex-direction: column;
+    }
     .banner-brand{
         font-size: 40px;
         margin-top: 24px;
