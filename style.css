@@ -34,12 +34,13 @@
     gap: 10px; 
     background: linear-gradient(20deg , #F7E93F 0%,#FB09B4 41%, #9100F8 100%);
     align-items: center;
-    transition: transform 0.3s ease; 
+    transition:  all 0.3s ease; 
 }
 .btn:hover,
 .btn-1:hover{
     background: linear-gradient(20deg , #9100F8 10%  ,#FB09B4 41%,   #F7E93F 0%);
     transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 255, 242, 0.3);
 }
  
 /* .btn:hover {
@@ -79,7 +80,9 @@
     display: flex;
     justify-content: space-around;
     padding: 16px 0px;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .brand,.gradient{
     font-size: 48px;
@@ -103,7 +106,10 @@
  
 .nav-link{
     text-decoration: none;
+    
 }
+ 
+
 .hamburger-icon{
     display: none;
 }
@@ -191,6 +197,7 @@
     background-color: rgba(255, 255, 255, 0);
     margin-left: 8px;
     transition: transform 0.3s ease; 
+    box-shadow: 0 10px 20px rgba(0, 255, 242, 0.3);
 }
 .btn-2:hover{
     background-color: white;
